@@ -12,7 +12,7 @@ original model’s prediction – the accuracy ρAcc by 66.5%. Our work can help
 backdoor attacks on crowd counting models.
 
 <div align="center">
-  <img src="fig/all.png" alt="风景图片">
+  <img src="fig/all.png" alt="The general framework of our work">
   <p>Figure 1：The general framework of our work. Step 1, we create poisoned data and train clean models and models with backdoors. Step 2, we verify the effect of the attack under models with different backdoor strategies. Step 3, we select new clean data and the originalclean data to train the attacked model together, and then obtain a fine-tuned model. After that We input poisoned data to verify the effectiveness of our defense method, and also test the effect of the model on the clean data set.</p>
 </div>
 
@@ -30,10 +30,15 @@ CLIP-EBC: https://github.com/Yiming-M/CLIP-EBC
 ## Injection Trigger & Density Map altering
 For ground-truth, using the original methods to processing images.
 
-Using the dmap_for_SHHB_poisoned.py in CSRnet/data/part_B_final file to generate posioned densitymap
+Using the dmap_for_SHHB_poisoned.py in CSRnet/data/part_B_final file to generate posioned densitymap.
 
 ## Visualization
 Using the gradcam.py in CSRnet file to visualize.
+
+<div align="center">
+  <img src="fig/add.jpg" width=600cm alt="visualization">
+  <p>Figure 2：Grad-CAM visualization of regions that contributes to model decision under add attack strategies and fine-tuning defense methods with CSRnet.</p>
+</div>
 
 ## References
 
