@@ -24,6 +24,49 @@ ShanghaiTech Dataset: https://www.kaggle.com/datasets/tthien/shanghaitech
 
 ## The Targeted Models
 CSRNet: https://github.com/CommissarMa/CSRNet-pytorch
+
 CLIP-EBC: https://github.com/Yiming-M/CLIP-EBC
 
 ## Injection Trigger & Density Map altering
+For ground-truth, using the original methods to processing images.
+
+Using the dmap_for_SHHB_poisoned.py in CSRnet/data/part_B_final file to generate posioned densitymap
+
+## Visualization
+Using the gradcam.py in CSRnet file to visualize.
+
+## References
+
+CSRnet
+```
+@inproceedings{li2018csrnet,
+  title={CSRNet: Dilated convolutional neural networks for understanding the highly congested scenes},
+  author={Li, Yuhong and Zhang, Xiaofan and Chen, Deming},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={1091--1100},
+  year={2018}
+}
+```
+
+
+CLIP-EBC
+```
+@article{ma2024clip,
+title={CLIP-EBC: CLIP Can Count Accurately through Enhanced Blockwise Classification},
+author={Ma, Yiming and Sanchez, Victor and Guha, Tanaya},
+journal={arXiv preprint arXiv:2403.09281},
+year={2024}
+}
+```
+
+
+ShanghaiTech Datasets
+```
+@inproceedings{zhang2016single,
+  title={Single-image crowd counting via multi-column convolutional neural network},
+  author={Zhang, Yingying and Zhou, Desen and Chen, Siqin and Gao, Shenghua and Ma, Yi},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={589--597},
+  year={2016}
+}
+```
