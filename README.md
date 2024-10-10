@@ -13,4 +13,17 @@ backdoor attacks on crowd counting models.
 
 <div align="center">
   <img src="fig/all.png" alt="风景图片">
+  <p>Figure 1：The general framework of our work. Step 1, we create poisoned data and train clean models and models with backdoors. Step 2, we verify the effect of the attack under models with different backdoor strategies. Step 3, we select new clean data and the originalclean data to train the attacked model together, and then obtain a fine-tuned model. After that We input poisoned data to verify the effectiveness of our defense method, and also test the effect of the model on the clean data set.</p>
 </div>
+
+## Requirement
+Follow the requirements of the targeted models
+
+## Dataset
+ShanghaiTech Dataset: https://www.kaggle.com/datasets/tthien/shanghaitech
+
+## The Targeted Models
+CSRNet: https://github.com/CommissarMa/CSRNet-pytorch
+CLIP-EBC: https://github.com/Yiming-M/CLIP-EBC
+
+## Injection Trigger & Density Map altering
